@@ -21,7 +21,7 @@ Lab Manager: lab@example.com / password
 
 Testing the APIs:-
 1.Create an API token for a user (e.g., admin):
-# in tinker
+#in tinker
 $u = App\Models\User::where('email','admin@example.com')->first();
 $u->createToken('api-token')->plainTextToken;
 
