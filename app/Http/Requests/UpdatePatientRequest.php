@@ -24,6 +24,7 @@ class UpdatePatientRequest extends FormRequest
         $ignoreEmail = $patient ? $patient->id : null;
 
         return [
+            'user_id' => 'sometimes|required',
             'first_name' => 'sometimes|required|string|max:255',
             'last_name' => 'sometimes|required|string|max:255',
             'date_of_birth' => 'sometimes|required|date',

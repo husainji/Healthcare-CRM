@@ -15,6 +15,7 @@ class StorePatientRequest extends FormRequest
     public function rules()
     {
         return [
+            'user_id' => 'required',
             'first_name' => 'required|string|max:255',
             'last_name' => 'required|string|max:255',
             'date_of_birth' => 'required|date',
