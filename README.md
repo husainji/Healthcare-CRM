@@ -11,6 +11,10 @@ This project made in Laravel 10 and used mysql database. This is the Healtcare-C
 9. php artisan serve (php artisan serve)
 
 
+Publish the Vendor Files:-
+php artisan vendor:publish --provider="Spatie\Permission\PermissionServiceProvider"
+php artisan vendor:publish --provider="Laravel\Sanctum\SanctumServiceProvider"
+
 Testing the web part:-
 Seeded credentials (for testing):
 Admin: admin@example.com / password
